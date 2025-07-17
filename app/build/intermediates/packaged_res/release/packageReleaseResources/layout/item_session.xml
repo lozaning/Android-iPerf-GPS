@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/sessionCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sessionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/sessionDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server: 192.168.1.1 | Tests: 25 | Date: 2024-01-15"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/sessionLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AP Location: 37.7749, -122.4194"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

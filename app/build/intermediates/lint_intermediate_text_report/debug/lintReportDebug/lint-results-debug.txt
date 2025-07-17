@@ -1,0 +1,575 @@
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/AndroidManifest.xml:9: Warning: WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the MediaStore.createWriteRequest intent. [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:257: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                    "AP Location: ${String.format("%.4f", session.apLatitude)}, ${String.format("%.4f", session.apLongitude)}"
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:257: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                    "AP Location: ${String.format("%.4f", session.apLatitude)}, ${String.format("%.4f", session.apLongitude)}"
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:257: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                    "AP Location: ${String.format("%.4f", session.apLatitude)}, ${String.format("%.4f", session.apLongitude)}"
+                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:257: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                    "AP Location: ${String.format("%.4f", session.apLatitude)}, ${String.format("%.4f", session.apLongitude)}"
+                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:214: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Speed:</b> ${String.format("%.2f", result.speedMbps)} Mbps<br/>")
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:215: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Distance from AP:</b> ${String.format("%.1f", result.distanceFromAp)} m<br/>")
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:216: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Data Transferred:</b> ${String.format("%.2f", result.dataMB)} MB<br/>")
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:217: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Test Duration:</b> ${String.format("%.1f", result.testDurationSeconds)} s<br/>")
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:218: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Accuracy:</b> ${String.format("%.1f", result.accuracy)} m<br/>")
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:220: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Coordinates:</b> ${String.format("%.6f", result.latitude)}, ${String.format("%.6f", result.longitude)}")
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/data/KmlExporter.kt:220: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            kml.append("<b>Coordinates:</b> ${String.format("%.6f", result.latitude)}, ${String.format("%.6f", result.longitude)}")
+                                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:350: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            String.format("%.1f", speedMbps),
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:567: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+            String.format("%.1f", speedMbps),
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.ROOT) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:40: Warning: A newer version of androidx.core:core-ktx than 1.10.1 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.10.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:41: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:42: Warning: A newer version of com.google.android.material:material than 1.9.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.9.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:43: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:46: Warning: A newer version of com.google.android.gms:play-services-location than 21.0.1 is available: 21.3.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:52: Warning: A newer version of androidx.activity:activity-ktx than 1.7.2 is available: 1.10.1 [GradleDependency]
+    implementation 'androidx.activity:activity-ktx:1.7.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:53: Warning: A newer version of androidx.fragment:fragment-ktx than 1.6.1 is available: 1.8.8 [GradleDependency]
+    implementation 'androidx.fragment:fragment-ktx:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:59: Warning: A newer version of androidx.room:room-runtime than 2.5.2 is available: 2.7.2 [GradleDependency]
+    implementation 'androidx.room:room-runtime:2.5.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:60: Warning: A newer version of androidx.room:room-ktx than 2.5.2 is available: 2.7.2 [GradleDependency]
+    implementation 'androidx.room:room-ktx:2.5.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:61: Warning: A newer version of androidx.room:room-compiler than 2.5.2 is available: 2.7.2 [GradleDependency]
+    ksp 'androidx.room:room-compiler:2.5.2'
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:64: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.2 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:65: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.2 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:71: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/build.gradle:72: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:92: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+        sessionAdapter.notifyDataSetChanged()
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:227: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+            notifyDataSetChanged()
+            ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotifyDataSetChanged":
+   The RecyclerView adapter's onNotifyDataSetChanged method does not specify
+   what about the data set has changed, forcing any observers to assume that
+   all existing items and structure may no longer be valid. `LayoutManager`s
+   will be forced to fully rebind and relayout all visible views.
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/item_session.xml:7: Warning: Possible overdraw: Root element paints background ?attr/selectableItemBackground with a theme that also paints a background (inferred theme is @style/Theme_AndroidProject) [Overdraw]
+    android:background="?attr/selectableItemBackground"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:15: Warning: The resource R.color.colorPrimary appears to be unused [UnusedResources]
+    <color name="colorPrimary">@color/primary_blue</color>
+           ~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:16: Warning: The resource R.color.colorPrimaryDark appears to be unused [UnusedResources]
+    <color name="colorPrimaryDark">@color/primary_dark_blue</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:17: Warning: The resource R.color.colorAccent appears to be unused [UnusedResources]
+    <color name="colorAccent">@color/primary_teal</color>
+           ~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:20: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:21: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:22: Warning: The resource R.color.purple_700 appears to be unused [UnusedResources]
+    <color name="purple_700">#FF3700B3</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:23: Warning: The resource R.color.teal_200 appears to be unused [UnusedResources]
+    <color name="teal_200">#FF03DAC5</color>
+           ~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:24: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:27: Warning: The resource R.color.button_primary appears to be unused [UnusedResources]
+    <color name="button_primary">@color/primary_blue</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:28: Warning: The resource R.color.button_secondary appears to be unused [UnusedResources]
+    <color name="button_secondary">@color/primary_light_blue</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:29: Warning: The resource R.color.button_accent appears to be unused [UnusedResources]
+    <color name="button_accent">@color/primary_teal</color>
+           ~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:33: Warning: The resource R.color.background_secondary appears to be unused [UnusedResources]
+    <color name="background_secondary">#F8F9FA</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:38: Warning: The resource R.color.text_secondary appears to be unused [UnusedResources]
+    <color name="text_secondary">#666666</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:39: Warning: The resource R.color.text_on_primary appears to be unused [UnusedResources]
+    <color name="text_on_primary">@color/white</color>
+           ~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:42: Warning: The resource R.color.speed_slow appears to be unused [UnusedResources]
+    <color name="speed_slow">@color/primary_dark_blue</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:43: Warning: The resource R.color.speed_medium appears to be unused [UnusedResources]
+    <color name="speed_medium">@color/primary_blue</color>
+           ~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:44: Warning: The resource R.color.speed_fast appears to be unused [UnusedResources]
+    <color name="speed_fast">@color/primary_light_blue</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/values/colors.xml:45: Warning: The resource R.color.speed_very_fast appears to be unused [UnusedResources]
+    <color name="speed_very_fast">@color/primary_teal</color>
+           ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:109: Warning: Missing autofillHints attribute [Autofill]
+                <EditText
+                 ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:87: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(event: MotionEvent): Boolean {
+                         ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:87: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(event: MotionEvent): Boolean {
+                         ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:87: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(event: MotionEvent): Boolean {
+                         ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:99: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(event: MotionEvent): Boolean {
+                         ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:99: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(event: MotionEvent): Boolean {
+                         ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:99: Warning: Custom view anonymous class overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+            override fun onTouchEvent(event: MotionEvent): Boolean {
+                         ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/map/SpeedVisualizationMap.kt:624: Warning: Custom view SpeedVisualizationMap overrides onTouchEvent but not performClick [ClickableViewAccessibility]
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+                 ~~~~~~~~~~~~
+
+   Explanation for issues of type "ClickableViewAccessibility":
+   If a View that overrides onTouchEvent or uses an OnTouchListener does not
+   also implement performClick and call it when clicks are detected, the View
+   may not handle accessibility actions properly. Logic handling the click
+   actions should ideally be placed in View#performClick as some accessibility
+   services invoke performClick when a click action should occur.
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:141: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                binding.exportButton.text = "Exporting..."
+                                            ~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:141: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.exportButton.text = "Exporting..."
+                                             ~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:254: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                details.text = "Server: ${session.iperfServer} | Duration: ${session.testDuration}s | Date: $date"
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:254: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                details.text = "Server: ${session.iperfServer} | Duration: ${session.testDuration}s | Date: $date"
+                                ~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:254: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                details.text = "Server: ${session.iperfServer} | Duration: ${session.testDuration}s | Date: $date"
+                                                              ~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/ExportActivity.kt:254: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                details.text = "Server: ${session.iperfServer} | Duration: ${session.testDuration}s | Date: $date"
+                                                                                                  ~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MainActivity.kt:93: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.satelliteToggleButton.text = "Grid"
+                                                 ~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MainActivity.kt:93: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.satelliteToggleButton.text = "Grid"
+                                                  ~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MainActivity.kt:98: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.satelliteToggleButton.text = "OSM"
+                                                 ~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MainActivity.kt:98: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.satelliteToggleButton.text = "OSM"
+                                                  ~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:140: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.markApSatelliteToggleButton.text = "Grid"
+                                                       ~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:140: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.markApSatelliteToggleButton.text = "Grid"
+                                                        ~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:144: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.markApSatelliteToggleButton.text = "OSM"
+                                                       ~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:144: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.markApSatelliteToggleButton.text = "OSM"
+                                                        ~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:305: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.currentResultText.text = "Current: Running test ($mode)..."
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:305: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.currentResultText.text = "Current: Running test ($mode)..."
+                                              ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:374: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    binding.currentResultText.text = "Current: Test failed - ${result.error}"
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:374: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    binding.currentResultText.text = "Current: Test failed - ${result.error}"
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:379: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                binding.currentResultText.text = "Current: Error - ${e.message}"
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:379: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.currentResultText.text = "Current: Error - ${e.message}"
+                                                  ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                               ~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:389: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.previousResultText.text = "Previous: ${String.format("%.1f", prev.speedMbps)} Mbps at ${String.format("%.0f", prev.distanceFromAp)}m"
+                                                                                                 ~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                              ~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:393: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.currentResultText.text = "Current: ${String.format("%.1f", curr.speedMbps)} Mbps at ${String.format("%.0f", curr.distanceFromAp)}m"
+                                                                                               ~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:400: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            binding.currentGpsText.text = "GPS: ${String.format("%.6f", location.latitude)}, ${String.format("%.6f", location.longitude)} (±${String.format("%.1f", location.accuracy)}m)"
+                                           ~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                        ~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                                                         ~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:404: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.currentGyroText.text = "Gyro: Az ${String.format("%.1f", currentAzimuth)}°, Pitch ${String.format("%.1f", currentPitch)}°, Roll ${String.format("%.1f", currentRoll)}°"
+                                                                                                                                        ~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:414: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                binding.previousResultText.text = "Previous: No previous test"
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:414: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.previousResultText.text = "Previous: No previous test"
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:415: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                binding.currentResultText.text = "Current: No test running"
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/java/com/example/androidproject/MarkApActivity.kt:415: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                binding.currentResultText.text = "Current: No test running"
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_export.xml:56: Warning: Hardcoded string "Select All", should use @string resource [HardcodedText]
+            android:text="Select All"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_export.xml:67: Warning: Hardcoded string "Delete", should use @string resource [HardcodedText]
+            android:text="Delete"
+            ~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_export.xml:80: Warning: Hardcoded string "Export KML", should use @string resource [HardcodedText]
+            android:text="Export KML"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_main.xml:36: Warning: Hardcoded string "OSM", should use @string resource [HardcodedText]
+            android:text="OSM"
+            ~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_main.xml:46: Warning: Hardcoded string "Recenter", should use @string resource [HardcodedText]
+            android:text="Recenter"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_main.xml:70: Warning: Hardcoded string "Mark AP", should use @string resource [HardcodedText]
+            android:text="Mark AP"
+            ~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_main.xml:80: Warning: Hardcoded string "Export", should use @string resource [HardcodedText]
+            android:text="Export"
+            ~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:37: Warning: Hardcoded string "OSM", should use @string resource [HardcodedText]
+            android:text="OSM"
+            ~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:47: Warning: Hardcoded string "Recenter", should use @string resource [HardcodedText]
+            android:text="Recenter"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:76: Warning: Hardcoded string "Test Configuration", should use @string resource [HardcodedText]
+                android:text="Test Configuration"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:98: Warning: Hardcoded string "Duration (s)", should use @string resource [HardcodedText]
+                        android:text="Duration (s)"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:106: Warning: Hardcoded string "Data (MB)", should use @string resource [HardcodedText]
+                        android:text="Data (MB)" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:113: Warning: Hardcoded string "10", should use @string resource [HardcodedText]
+                    android:hint="10"
+                    ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:115: Warning: Hardcoded string "10", should use @string resource [HardcodedText]
+                    android:text="10"
+                    ~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:124: Warning: Hardcoded string "Current Status", should use @string resource [HardcodedText]
+                android:text="Current Status"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:134: Warning: Hardcoded string "GPS: Getting location...", should use @string resource [HardcodedText]
+                android:text="GPS: Getting location..."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:142: Warning: Hardcoded string "Gyro: Getting orientation...", should use @string resource [HardcodedText]
+                android:text="Gyro: Getting orientation..."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:150: Warning: Hardcoded string "Test Results", should use @string resource [HardcodedText]
+                android:text="Test Results"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:159: Warning: Hardcoded string "Previous: No previous test", should use @string resource [HardcodedText]
+                android:text="Previous: No previous test"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:167: Warning: Hardcoded string "Current: No test running", should use @string resource [HardcodedText]
+                android:text="Current: No test running"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:183: Warning: Hardcoded string "Manual", should use @string resource [HardcodedText]
+                    android:text="Manual"
+                    ~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:192: Warning: Hardcoded string "Auto", should use @string resource [HardcodedText]
+                    android:text="Auto"
+                    ~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/activity_mark_ap.xml:202: Warning: Hardcoded string "Done", should use @string resource [HardcodedText]
+                    android:text="Done"
+                    ~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/item_session.xml:25: Warning: Hardcoded string "Session Title", should use @string resource [HardcodedText]
+            android:text="Session Title"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/item_session.xml:34: Warning: Hardcoded string "Server: 192.168.1.1 | Tests: 25 | Date: 2024-01-15", should use @string resource [HardcodedText]
+            android:text="Server: 192.168.1.1 | Tests: 25 | Date: 2024-01-15"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/lozaning/Documents/GitHub/GPSSpeedTest/app/src/main/res/layout/item_session.xml:43: Warning: Hardcoded string "AP Location: 37.7749, -122.4194", should use @string resource [HardcodedText]
+            android:text="AP Location: 37.7749, -122.4194"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 139 warnings

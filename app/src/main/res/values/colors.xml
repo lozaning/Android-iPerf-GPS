@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Color Palette - Based on colors.jpg -->
+    <color name="primary_dark_blue">#125488</color>
+    <color name="primary_blue">#2A93D5</color>
+    <color name="primary_light_blue">#37CAEC</color>
+    <color name="primary_teal">#3DD9D6</color>
+    <color name="primary_light_teal">#A0D9D8</color>
+    
+    <!-- Material Design Colors using our palette -->
+    <color name="colorPrimary">@color/primary_blue</color>
+    <color name="colorPrimaryDark">@color/primary_dark_blue</color>
+    <color name="colorAccent">@color/primary_teal</color>
+    
+    <!-- Legacy Material colors (for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    
+    <!-- Button colors -->
+    <color name="button_primary">@color/primary_blue</color>
+    <color name="button_secondary">@color/primary_light_blue</color>
+    <color name="button_accent">@color/primary_teal</color>
+    
+    <!-- Background colors -->
+    <color name="background_primary">@color/white</color>
+    <color name="background_secondary">#F8F9FA</color>
+    <color name="background_card">#FFFFFF</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">@color/black</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_on_primary">@color/white</color>
+    
+    <!-- Speed indicator colors -->
+    <color name="speed_slow">@color/primary_dark_blue</color>
+    <color name="speed_medium">@color/primary_blue</color>
+    <color name="speed_fast">@color/primary_light_blue</color>
+    <color name="speed_very_fast">@color/primary_teal</color>
+</resources>

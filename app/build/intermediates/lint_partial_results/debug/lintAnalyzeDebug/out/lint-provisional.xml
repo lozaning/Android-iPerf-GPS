@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.0" type="conditional_incidents">
+
+    <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="9"
+            column="36"
+            startOffset="502"
+            endLine="9"
+            endColumn="77"
+            endOffset="543"/>
+        <map>
+            <entry
+                name="maxSdkVersion"
+                int="2147483647"/>
+            <entry
+                name="read"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 31">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="957"
+                endOffset="977"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="20"
+            column="9"
+            startOffset="957"
+            endLine="20"
+            endColumn="29"
+            endOffset="977"/>
+        <map>
+            <condition minGE="ffffffffc0000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_arrow_back.xml"
+            line="7"
+            column="19"
+            startOffset="238"
+            endLine="7"
+            endColumn="39"
+            endOffset="258"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_arrow_back.xml"
+            line="9"
+            column="28"
+            startOffset="298"
+            endLine="9"
+            endColumn="48"
+            endOffset="318"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+</incidents>

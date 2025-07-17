@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarkApActivity">
+
+    <!-- Top Map View -->
+    <com.example.androidproject.map.SpeedVisualizationMap
+        android:id="@+id/markApMap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/controlPanel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="1" />
+    
+    <!-- Map Control Buttons -->
+    <LinearLayout
+        android:id="@+id/markApMapControlsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/markApSatelliteToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="OSM"
+            android:textSize="12sp"
+            android:minWidth="80dp"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/markApRecenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Recenter"
+            android:textSize="12sp"
+            android:minWidth="80dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </LinearLayout>
+
+    <!-- Bottom Control Panel -->
+    <ScrollView
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/markApMap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Test Configuration -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Configuration"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <RadioGroup
+                    android:id="@+id/testModeGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/durationMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration (s)"
+                        android:checked="true"
+                        android:layout_marginEnd="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/dataSizeMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data (MB)" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/testValueInput"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="10"
+                    android:inputType="number"
+                    android:text="10"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <!-- Current Status -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/currentGpsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GPS: Getting location..."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/currentGyroText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gyro: Getting orientation..."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Test Results -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Results"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/previousResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previous: No previous test"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/currentResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current: No test running"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Control Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/manualTestButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Manual"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/autoTestButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Auto"
+                    android:textSize="16sp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/doneButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Done"
+                    android:textSize="16sp"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

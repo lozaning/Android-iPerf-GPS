@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.0" type="incidents">
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Select All&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_export.xml"
+            line="56"
+            column="13"
+            startOffset="2278"
+            endLine="56"
+            endColumn="38"
+            endOffset="2303"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Delete&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_export.xml"
+            line="67"
+            column="13"
+            startOffset="2731"
+            endLine="67"
+            endColumn="34"
+            endOffset="2752"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Export KML&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_export.xml"
+            line="80"
+            column="13"
+            startOffset="3272"
+            endLine="80"
+            endColumn="38"
+            endOffset="3297"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;OSM&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="36"
+            column="13"
+            startOffset="1517"
+            endLine="36"
+            endColumn="31"
+            endOffset="1535"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Recenter&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="46"
+            column="13"
+            startOffset="1943"
+            endLine="46"
+            endColumn="36"
+            endOffset="1966"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Mark AP&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="70"
+            column="13"
+            startOffset="2864"
+            endLine="70"
+            endColumn="35"
+            endOffset="2886"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Export&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="80"
+            column="13"
+            startOffset="3239"
+            endLine="80"
+            endColumn="34"
+            endOffset="3260"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;OSM&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="37"
+            column="13"
+            startOffset="1578"
+            endLine="37"
+            endColumn="31"
+            endOffset="1596"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Recenter&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="47"
+            column="13"
+            startOffset="2010"
+            endLine="47"
+            endColumn="36"
+            endOffset="2033"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Test Configuration&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="76"
+            column="17"
+            startOffset="3101"
+            endLine="76"
+            endColumn="50"
+            endOffset="3134"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Duration (s)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="98"
+            column="25"
+            startOffset="4021"
+            endLine="98"
+            endColumn="52"
+            endOffset="4048"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Data (MB)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="106"
+            column="25"
+            startOffset="4389"
+            endLine="106"
+            endColumn="49"
+            endOffset="4413"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="109"
+            column="18"
+            startOffset="4465"
+            endLine="109"
+            endColumn="26"
+            endOffset="4473"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;10&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="113"
+            column="21"
+            startOffset="4652"
+            endLine="113"
+            endColumn="38"
+            endOffset="4669"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;10&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="115"
+            column="21"
+            startOffset="4737"
+            endLine="115"
+            endColumn="38"
+            endOffset="4754"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Current Status&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="124"
+            column="17"
+            startOffset="5018"
+            endLine="124"
+            endColumn="46"
+            endOffset="5047"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;GPS: Getting location...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="134"
+            column="17"
+            startOffset="5424"
+            endLine="134"
+            endColumn="56"
+            endOffset="5463"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Gyro: Getting orientation...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="142"
+            column="17"
+            startOffset="5751"
+            endLine="142"
+            endColumn="60"
+            endOffset="5794"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Test Results&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="150"
+            column="17"
+            startOffset="6067"
+            endLine="150"
+            endColumn="44"
+            endOffset="6094"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Previous: No previous test&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="159"
+            column="17"
+            startOffset="6427"
+            endLine="159"
+            endColumn="58"
+            endOffset="6468"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Current: No test running&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="167"
+            column="17"
+            startOffset="6758"
+            endLine="167"
+            endColumn="56"
+            endOffset="6797"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Manual&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="183"
+            column="21"
+            startOffset="7443"
+            endLine="183"
+            endColumn="42"
+            endOffset="7464"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Auto&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="192"
+            column="21"
+            startOffset="7846"
+            endLine="192"
+            endColumn="40"
+            endOffset="7865"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Done&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_mark_ap.xml"
+            line="202"
+            column="21"
+            startOffset="8296"
+            endLine="202"
+            endColumn="40"
+            endOffset="8315"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Session Title&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_session.xml"
+            line="25"
+            column="13"
+            startOffset="860"
+            endLine="25"
+            endColumn="41"
+            endOffset="888"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Server: 192.168.1.1 | Tests: 25 | Date: 2024-01-15&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_session.xml"
+            line="34"
+            column="13"
+            startOffset="1191"
+            endLine="34"
+            endColumn="78"
+            endOffset="1256"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;AP Location: 37.7749, -122.4194&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_session.xml"
+            line="43"
+            column="13"
+            startOffset="1572"
+            endLine="43"
+            endColumn="59"
+            endOffset="1618"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="92"
+            column="9"
+            startOffset="3017"
+            endLine="92"
+            endColumn="46"
+            endOffset="3054"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="141"
+            column="45"
+            startOffset="4850"
+            endLine="141"
+            endColumn="59"
+            endOffset="4864"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="141"
+            column="46"
+            startOffset="4851"
+            endLine="141"
+            endColumn="58"
+            endOffset="4863"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="227"
+            column="13"
+            startOffset="8153"
+            endLine="227"
+            endColumn="35"
+            endOffset="8175"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="254"
+            column="32"
+            startOffset="9523"
+            endLine="254"
+            endColumn="115"
+            endOffset="9606"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="254"
+            column="33"
+            startOffset="9524"
+            endLine="254"
+            endColumn="41"
+            endOffset="9532"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="254"
+            column="63"
+            startOffset="9554"
+            endLine="254"
+            endColumn="76"
+            endOffset="9567"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="254"
+            column="99"
+            startOffset="9590"
+            endLine="254"
+            endColumn="109"
+            endOffset="9600"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="257"
+            column="37"
+            startOffset="9755"
+            endLine="257"
+            endColumn="78"
+            endOffset="9796"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="257"
+            column="83"
+            startOffset="9801"
+            endLine="257"
+            endColumn="125"
+            endOffset="9843"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="257"
+            column="37"
+            startOffset="9755"
+            endLine="257"
+            endColumn="78"
+            endOffset="9796"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/ExportActivity.kt"
+            line="257"
+            column="83"
+            startOffset="9801"
+            endLine="257"
+            endColumn="125"
+            endOffset="9843"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MainActivity.kt"
+            line="93"
+            column="50"
+            startOffset="3535"
+            endLine="93"
+            endColumn="56"
+            endOffset="3541"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MainActivity.kt"
+            line="93"
+            column="51"
+            startOffset="3536"
+            endLine="93"
+            endColumn="55"
+            endOffset="3540"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MainActivity.kt"
+            line="98"
+            column="50"
+            startOffset="3778"
+            endLine="98"
+            endColumn="55"
+            endOffset="3783"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MainActivity.kt"
+            line="98"
+            column="51"
+            startOffset="3779"
+            endLine="98"
+            endColumn="54"
+            endOffset="3782"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="140"
+            column="56"
+            startOffset="5196"
+            endLine="140"
+            endColumn="62"
+            endOffset="5202"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="140"
+            column="57"
+            startOffset="5197"
+            endLine="140"
+            endColumn="61"
+            endOffset="5201"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="144"
+            column="56"
+            startOffset="5389"
+            endLine="144"
+            endColumn="61"
+            endOffset="5394"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="144"
+            column="57"
+            startOffset="5390"
+            endLine="144"
+            endColumn="60"
+            endOffset="5393"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="305"
+            column="46"
+            startOffset="11450"
+            endLine="305"
+            endColumn="80"
+            endOffset="11484"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="305"
+            column="47"
+            startOffset="11451"
+            endLine="305"
+            endColumn="70"
+            endOffset="11474"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="374"
+            column="54"
+            startOffset="14160"
+            endLine="374"
+            endColumn="94"
+            endOffset="14200"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="374"
+            column="55"
+            startOffset="14161"
+            endLine="374"
+            endColumn="78"
+            endOffset="14184"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="379"
+            column="50"
+            startOffset="14342"
+            endLine="379"
+            endColumn="81"
+            endOffset="14373"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="379"
+            column="51"
+            startOffset="14343"
+            endLine="379"
+            endColumn="68"
+            endOffset="14360"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="47"
+            startOffset="14628"
+            endLine="389"
+            endColumn="154"
+            endOffset="14735"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="48"
+            startOffset="14629"
+            endLine="389"
+            endColumn="58"
+            endOffset="14639"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="98"
+            startOffset="14679"
+            endLine="389"
+            endColumn="107"
+            endOffset="14688"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="60"
+            startOffset="14641"
+            endLine="389"
+            endColumn="97"
+            endOffset="14678"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="109"
+            startOffset="14690"
+            endLine="389"
+            endColumn="151"
+            endOffset="14732"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="60"
+            startOffset="14641"
+            endLine="389"
+            endColumn="97"
+            endOffset="14678"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="389"
+            column="109"
+            startOffset="14690"
+            endLine="389"
+            endColumn="151"
+            endOffset="14732"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="46"
+            startOffset="14837"
+            endLine="393"
+            endColumn="152"
+            endOffset="14943"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="47"
+            startOffset="14838"
+            endLine="393"
+            endColumn="56"
+            endOffset="14847"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="96"
+            startOffset="14887"
+            endLine="393"
+            endColumn="105"
+            endOffset="14896"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="58"
+            startOffset="14849"
+            endLine="393"
+            endColumn="95"
+            endOffset="14886"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="107"
+            startOffset="14898"
+            endLine="393"
+            endColumn="149"
+            endOffset="14940"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="58"
+            startOffset="14849"
+            endLine="393"
+            endColumn="95"
+            endOffset="14886"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="393"
+            column="107"
+            startOffset="14898"
+            endLine="393"
+            endColumn="149"
+            endOffset="14940"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="43"
+            startOffset="15109"
+            endLine="400"
+            endColumn="187"
+            endOffset="15253"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="44"
+            startOffset="15110"
+            endLine="400"
+            endColumn="49"
+            endOffset="15115"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="51"
+            startOffset="15117"
+            endLine="400"
+            endColumn="91"
+            endOffset="15157"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="96"
+            startOffset="15162"
+            endLine="400"
+            endColumn="137"
+            endOffset="15203"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="143"
+            startOffset="15209"
+            endLine="400"
+            endColumn="183"
+            endOffset="15249"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="51"
+            startOffset="15117"
+            endLine="400"
+            endColumn="91"
+            endOffset="15157"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="96"
+            startOffset="15162"
+            endLine="400"
+            endColumn="137"
+            endOffset="15203"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="400"
+            column="143"
+            startOffset="15209"
+            endLine="400"
+            endColumn="183"
+            endOffset="15249"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="40"
+            startOffset="15343"
+            endLine="404"
+            endColumn="184"
+            endOffset="15487"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="41"
+            startOffset="15344"
+            endLine="404"
+            endColumn="50"
+            endOffset="15353"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="90"
+            startOffset="15393"
+            endLine="404"
+            endColumn="99"
+            endOffset="15402"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="137"
+            startOffset="15440"
+            endLine="404"
+            endColumn="145"
+            endOffset="15448"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="52"
+            startOffset="15355"
+            endLine="404"
+            endColumn="89"
+            endOffset="15392"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="101"
+            startOffset="15404"
+            endLine="404"
+            endColumn="136"
+            endOffset="15439"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="147"
+            startOffset="15450"
+            endLine="404"
+            endColumn="181"
+            endOffset="15484"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="52"
+            startOffset="15355"
+            endLine="404"
+            endColumn="89"
+            endOffset="15392"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="101"
+            startOffset="15404"
+            endLine="404"
+            endColumn="136"
+            endOffset="15439"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="404"
+            column="147"
+            startOffset="15450"
+            endLine="404"
+            endColumn="181"
+            endOffset="15484"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="414"
+            column="51"
+            startOffset="15969"
+            endLine="414"
+            endColumn="79"
+            endOffset="15997"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="414"
+            column="52"
+            startOffset="15970"
+            endLine="414"
+            endColumn="78"
+            endOffset="15996"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="415"
+            column="50"
+            startOffset="16047"
+            endLine="415"
+            endColumn="76"
+            endOffset="16073"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/MarkApActivity.kt"
+            line="415"
+            column="51"
+            startOffset="16048"
+            endLine="415"
+            endColumn="75"
+            endOffset="16072"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="214"
+            column="41"
+            startOffset="8165"
+            endLine="214"
+            endColumn="80"
+            endOffset="8204"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="215"
+            column="52"
+            startOffset="8269"
+            endLine="215"
+            endColumn="96"
+            endOffset="8313"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="216"
+            column="52"
+            startOffset="8375"
+            endLine="216"
+            endColumn="88"
+            endOffset="8411"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="217"
+            column="49"
+            startOffset="8471"
+            endLine="217"
+            endColumn="98"
+            endOffset="8520"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="218"
+            column="44"
+            startOffset="8574"
+            endLine="218"
+            endColumn="82"
+            endOffset="8612"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="220"
+            column="47"
+            startOffset="8763"
+            endLine="220"
+            endColumn="85"
+            endOffset="8801"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/data/KmlExporter.kt"
+            line="220"
+            column="90"
+            startOffset="8806"
+            endLine="220"
+            endColumn="129"
+            endOffset="8845"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view `SpeedVisualizationMap` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="624"
+            column="18"
+            startOffset="20778"
+            endLine="624"
+            endColumn="30"
+            endOffset="20790"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view anonymous class overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="87"
+            column="26"
+            startOffset="3081"
+            endLine="87"
+            endColumn="38"
+            endOffset="3093"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view anonymous class overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="99"
+            column="26"
+            startOffset="3491"
+            endLine="99"
+            endColumn="38"
+            endOffset="3503"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view anonymous class overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="87"
+            column="26"
+            startOffset="3081"
+            endLine="87"
+            endColumn="38"
+            endOffset="3093"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view anonymous class overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="99"
+            column="26"
+            startOffset="3491"
+            endLine="99"
+            endColumn="38"
+            endOffset="3503"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view anonymous class overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="87"
+            column="26"
+            startOffset="3081"
+            endLine="87"
+            endColumn="38"
+            endOffset="3093"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view anonymous class overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="99"
+            column="26"
+            startOffset="3491"
+            endLine="99"
+            endColumn="38"
+            endOffset="3503"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="350"
+            column="13"
+            startOffset="11776"
+            endLine="350"
+            endColumn="45"
+            endOffset="11808"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/androidproject/map/SpeedVisualizationMap.kt"
+            line="567"
+            column="13"
+            startOffset="18740"
+            endLine="567"
+            endColumn="45"
+            endOffset="18772"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.10.1 is available: 1.16.0">
+        <fix-replace
+            description="Change to 1.16.0"
+            family="Update versions"
+            oldString="1.10.1"
+            replacement="1.16.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="40"
+            column="20"
+            startOffset="913"
+            endLine="40"
+            endColumn="51"
+            endOffset="944"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="41"
+            column="20"
+            startOffset="964"
+            endLine="41"
+            endColumn="56"
+            endOffset="1000"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.9.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.9.0"
+            replacement="1.12.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="42"
+            column="20"
+            startOffset="1020"
+            endLine="42"
+            endColumn="64"
+            endOffset="1064"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="43"
+            column="20"
+            startOffset="1084"
+            endLine="43"
+            endColumn="70"
+            endOffset="1134"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.gms:play-services-location than 21.0.1 is available: 21.3.0">
+        <fix-replace
+            description="Change to 21.3.0"
+            family="Update versions"
+            oldString="21.0.1"
+            replacement="21.3.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="46"
+            column="20"
+            startOffset="1192"
+            endLine="46"
+            endColumn="74"
+            endOffset="1246"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-ktx than 1.7.2 is available: 1.10.1">
+        <fix-replace
+            description="Change to 1.10.1"
+            family="Update versions"
+            oldString="1.7.2"
+            replacement="1.10.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="52"
+            column="20"
+            startOffset="1375"
+            endLine="52"
+            endColumn="58"
+            endOffset="1413"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.fragment:fragment-ktx than 1.6.1 is available: 1.8.8">
+        <fix-replace
+            description="Change to 1.8.8"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.8.8"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="53"
+            column="20"
+            startOffset="1433"
+            endLine="53"
+            endColumn="58"
+            endOffset="1471"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-runtime than 2.5.2 is available: 2.7.2">
+        <fix-replace
+            description="Change to 2.7.2"
+            family="Update versions"
+            oldString="2.5.2"
+            replacement="2.7.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="59"
+            column="20"
+            startOffset="1611"
+            endLine="59"
+            endColumn="54"
+            endOffset="1645"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-ktx than 2.5.2 is available: 2.7.2">
+        <fix-replace
+            description="Change to 2.7.2"
+            family="Update versions"
+            oldString="2.5.2"
+            replacement="2.7.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="60"
+            column="20"
+            startOffset="1665"
+            endLine="60"
+            endColumn="50"
+            endOffset="1695"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-compiler than 2.5.2 is available: 2.7.2">
+        <fix-replace
+            description="Change to 2.7.2"
+            family="Update versions"
+            oldString="2.5.2"
+            replacement="2.7.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="61"
+            column="9"
+            startOffset="1704"
+            endLine="61"
+            endColumn="44"
+            endOffset="1739"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.2">
+        <fix-replace
+            description="Change to 2.9.2"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.9.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="64"
+            column="20"
+            startOffset="1794"
+            endLine="64"
+            endColumn="70"
+            endOffset="1844"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.2">
+        <fix-replace
+            description="Change to 2.9.2"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.9.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="65"
+            column="20"
+            startOffset="1864"
+            endLine="65"
+            endColumn="69"
+            endOffset="1913"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="71"
+            column="31"
+            startOffset="2077"
+            endLine="71"
+            endColumn="62"
+            endOffset="2108"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="72"
+            column="31"
+            startOffset="2139"
+            endLine="72"
+            endColumn="75"
+            endOffset="2183"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `?attr/selectableItemBackground` with a theme that also paints a background (inferred theme is `@style/Theme_AndroidProject`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_session.xml"
+            line="7"
+            column="5"
+            startOffset="261"
+            endLine="7"
+            endColumn="56"
+            endOffset="312"/>
+    </incident>
+
+</incidents>

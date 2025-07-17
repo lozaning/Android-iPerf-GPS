@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.androidproject.app-mergeReleaseResources-43:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/lozaning/.gradle/caches/8.8/transforms/be357a3460d139e7cfaf78d0993c509b/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

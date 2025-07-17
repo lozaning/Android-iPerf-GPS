@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.androidproject.app-mergeReleaseResources-44:/layout/activity_main.xml",
+        "source": "com.example.androidproject.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.androidproject.app-mergeReleaseResources-44:/layout/activity_export.xml",
+        "source": "com.example.androidproject.app-main-46:/layout/activity_export.xml"
+    },
+    {
+        "merged": "com.example.androidproject.app-mergeReleaseResources-44:/layout/activity_mark_ap.xml",
+        "source": "com.example.androidproject.app-main-46:/layout/activity_mark_ap.xml"
+    },
+    {
+        "merged": "com.example.androidproject.app-mergeReleaseResources-44:/layout/activity_map.xml",
+        "source": "com.example.androidproject.app-main-46:/layout/activity_map.xml"
+    },
+    {
+        "merged": "com.example.androidproject.app-mergeReleaseResources-44:/layout/item_session.xml",
+        "source": "com.example.androidproject.app-main-46:/layout/item_session.xml"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-mergeDebugResources-44:/layout/activity_export.xml",
+        "source": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-main-47:/layout/activity_export.xml"
+    },
+    {
+        "merged": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-mergeDebugResources-44:/layout/item_session.xml",
+        "source": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-main-47:/layout/item_session.xml"
+    },
+    {
+        "merged": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-mergeDebugResources-44:/layout/activity_mark_ap.xml",
+        "source": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-main-47:/layout/activity_mark_ap.xml"
+    },
+    {
+        "merged": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-mergeDebugResources-44:/layout/activity_map.xml",
+        "source": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-main-47:/layout/activity_map.xml"
+    },
+    {
+        "merged": "com.example.androidproject.app-mergeDebugResources-44:/layout/activity_export.xml",
+        "source": "com.example.androidproject.app-main-47:/layout/activity_export.xml"
+    },
+    {
+        "merged": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-mergeDebugResources-44:/layout/activity_main.xml",
+        "source": "/Users/lozaning/.gradle/daemon/8.8/com.example.androidproject.app-main-47:/layout/activity_main.xml"
+    }
+]

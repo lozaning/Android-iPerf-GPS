@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary_teal</item>
+        <item name="colorSecondaryVariant">@color/primary_light_teal</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primary_dark_blue</item>
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="colorSurface">@color/background_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <!-- Accent color -->
+        <item name="colorAccent">@color/primary_light_blue</item>
+    </style>
+</resources>
