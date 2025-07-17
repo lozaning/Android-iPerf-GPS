@@ -15,18 +15,22 @@ Android app for testing network performance with GPS tracking and device orienta
 
 ### 1. Main Screen
 ![Main Screen](1.jpeg)
+
 Interactive satellite map showing speed test results as colored circles. Each session gets a unique color, with circle size indicating speed.
 
 ### 2. Server Setup
 ![Mark AP Screen - Server Setup](2.jpeg)
+
 Configure your iPerf3 server IP address and view real-time GPS/orientation data.
 
 ### 3. Test Configuration
 ![Mark AP Screen - Test Config](3.jpeg)
+
 Choose between duration-based or data-based testing modes and run manual or auto tests.
 
 ### 4. Export Screen
-![Export Screen](4.jpeg)
+![Export Screen](4.png)
+
 Manage test sessions - select, delete, or export to CSV format.
 
 ## Installation
