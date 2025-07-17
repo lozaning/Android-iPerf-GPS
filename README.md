@@ -27,6 +27,18 @@ GPS Speed Test is a powerful field testing tool that combines network speed test
 
 ### Installation
 
+#### Option 1: Direct APK Install (Recommended)
+
+1. **Download the APK** directly from this repository:
+   - [Download GPS Speed Test APK](./app-release.apk)
+
+2. **Install on your Android device**:
+   - Transfer the APK to your device
+   - Enable "Install from Unknown Sources" in Android Settings > Security
+   - Tap the APK file to install
+
+#### Option 2: Build from Source
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/GPSSpeedTest.git
